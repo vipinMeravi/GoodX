@@ -20,6 +20,8 @@ var onerror = function (error, callback) {
 };
 
 const user = require('../models/gx_user');
+const category = require('../models/gx_category');
+const sub_category = require('../models/gx_sub_category');
 const access_token = require('../models/gx_access_token');
 const refresh_token = require('../models/gx_refresh_token');
 
@@ -28,5 +30,7 @@ module.exports.db = db;
 module.exports = {
     user,
     access_token,
-    refresh_token
+    refresh_token,
+    category,
+    sub_category
 }
